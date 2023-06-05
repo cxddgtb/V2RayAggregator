@@ -17,7 +17,35 @@ dns:
   - https://dns.google/dns-query
   - tls://dns.google:853
 proxies:
-- null
+- name: 🇩🇪DE-172.104.136.167-043 | 10.147MB
+  server: de01.ckcloud.info
+  port: 21912
+  type: trojan
+  password: 0e53d736-dadf-412a-9be0-a28e59a8d2e6
+  sni: de01.ckcloud.info
+  skip-cert-verify: false
+- name: 🇨🇳CN-125.94.146.63-009 | 7.604MB
+  server: fsdx.jcnode.top
+  port: 40004
+  type: trojan
+  password: 0e53d736-dadf-412a-9be0-a28e59a8d2e6
+  sni: hk05.ckcloud.info
+  skip-cert-verify: false
+- name: RELAY-172.67.81.238-047 | 4.535MB
+  server: cdnjs.com
+  port: 443
+  type: vmess
+  uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: false
+  servername: RELAY-172.67.81.238-047 | 4.535MB
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: Dusseldorf.kotick.site
 proxy-groups:
 - name: Global ©️
   type: select
@@ -92,6 +120,8 @@ proxy-groups:
   interval: 300
   tolerance: 100
   proxies:
-  - DIRECT
+  - 🇩🇪DE-172.104.136.167-043 | 10.147MB
+  - 🇨🇳CN-125.94.146.63-009 | 7.604MB
+  - RELAY-172.67.81.238-047 | 4.535MB
 rules:
 - MATCH,Global ©️
