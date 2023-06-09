@@ -17,13 +17,7 @@ dns:
   - https://dns.google/dns-query
   - tls://dns.google:853
 proxies:
-- name: 🇨🇳CN-111.47.212.60-000 | 16.771MB
-  server: gzyd.jcnode.top
-  port: 29200
-  type: trojan
-  password: 3b042358-5064-4119-86cc-28c8ea2bbf0c
-  sni: vn01.ckcloud.info
-  skip-cert-verify: false
+- null
 proxy-groups:
 - name: Global ©️
   type: select
@@ -98,6 +92,6 @@ proxy-groups:
   interval: 300
   tolerance: 100
   proxies:
-  - 🇨🇳CN-111.47.212.60-000 | 16.771MB
+  - DIRECT
 rules:
 - MATCH,Global ©️
