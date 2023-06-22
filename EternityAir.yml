@@ -17,13 +17,7 @@ dns:
   - https://dns.google/dns-query
   - tls://dns.google:853
 proxies:
-- name: 🇨🇳CN-14.18.89.198-000 | 9.787MB
-  server: gzdx.jcnode.top
-  port: 43000
-  type: trojan
-  password: 9b13e1d4-0767-4795-98c7-7477ebe4ab54
-  sni: sg03.ckcloud.info
-  skip-cert-verify: false
+- null
 proxy-groups:
 - name: Global ©️
   type: select
@@ -98,6 +92,6 @@ proxy-groups:
   interval: 300
   tolerance: 100
   proxies:
-  - 🇨🇳CN-14.18.89.198-000 | 9.787MB
+  - DIRECT
 rules:
 - MATCH,Global ©️
