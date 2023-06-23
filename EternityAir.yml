@@ -17,7 +17,20 @@ dns:
   - https://dns.google/dns-query
   - tls://dns.google:853
 proxies:
-- null
+- name: 🇨🇳CN-14.18.89.198-049 | 8.15MB
+  server: gzyd.jcnode.top
+  port: 29200
+  type: trojan
+  password: 7bf5b8f0-c91c-4302-9630-863a6b2775f7
+  sni: vn01.ckcloud.info
+  skip-cert-verify: false
+- name: NOWHERE-0.0.0.0-000 | 0.304MB
+  server: 2233Cloud
+  port: 443
+  type: trojan
+  password: b738a2cd-fa08-37d4-a8bc-7488a6cb023b
+  sni: 2233Cloud
+  skip-cert-verify: false
 proxy-groups:
 - name: Global ©️
   type: select
@@ -92,6 +105,7 @@ proxy-groups:
   interval: 300
   tolerance: 100
   proxies:
-  - DIRECT
+  - 🇨🇳CN-14.18.89.198-049 | 8.15MB
+  - NOWHERE-0.0.0.0-000 | 0.304MB
 rules:
 - MATCH,Global ©️
